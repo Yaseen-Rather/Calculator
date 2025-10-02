@@ -22,8 +22,7 @@ class Stack {
     }
 
     isEmpty(){
-        if(this.top == -1) return 0;
-        else return 1;
+        return this.top === -1;
     }
 
 }

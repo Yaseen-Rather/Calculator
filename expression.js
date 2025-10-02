@@ -17,7 +17,7 @@ while (i < size){
 
         let noStr = "";
 
-        while(i < size && ((exp[i] >= '0' && exp[i] <= '9')) || exp[i] === '.'){
+        while(i < size && ((exp[i] >= '0' && exp[i] <= '9') || exp[i] === '.')){
             noStr += exp[i];
             i++;
         }
@@ -33,17 +33,25 @@ while (i < size){
             doprocess(operant, operator);
         }
         operator.push(ch);
+        i++;
     }
 
     // Parathensis
 
-    else if(ch === '(') operator.push(ch); // this is used for precedence checking;
+    else if(ch === '(') {
+        operator.push(ch); // this is used for precedence checking;
+        i++;
+    }
 
     else if(ch === ')'){
         while(!operator.isEmpty() && operator.peek() !== '(') doprocess(operant, operator);
         operator.pop();
+        i++;
     }
-    i++;
+    
+    else {
+        i++;
+    }
 
 }
 
