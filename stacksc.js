@@ -17,6 +17,7 @@ class Stack {
         this.top--;
         return a;
     }
+    // to see the top most element;
     peek(){
         return this.items[this.top];
     }

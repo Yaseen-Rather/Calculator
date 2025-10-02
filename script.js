@@ -1,7 +1,8 @@
 const display = document.getElementById("display");
 
 function appendtoDisplay(input){
-    display.value += input
+    display.value += input;
+    display.scrollLeft = display.scrollWidth;
 }
 
 function clearDisplay(){

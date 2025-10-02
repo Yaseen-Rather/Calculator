@@ -18,12 +18,23 @@ body{
 
 #display{
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     font-size: 5rem;
+    text-align: left;
+    padding-right: 40px;
+    direction: rtl;
     text-align: left;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
+    overflow-x: auto;  
+    overflow-y: hidden; 
+    white-space: nowrap;
+    box-sizing: border-box;  
+}
+
+#display::-webkit-scrollbar {
+    display: none;
 }
 
 #keys{
