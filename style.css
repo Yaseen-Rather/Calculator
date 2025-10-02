@@ -22,8 +22,6 @@ body{
     font-size: 5rem;
     text-align: left;
     padding-right: 40px;
-    direction: rtl;
-    text-align: left;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
