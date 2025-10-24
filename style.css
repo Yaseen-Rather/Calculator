@@ -52,13 +52,24 @@ button{
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 button:hover{
     background-color: hsl(0, 0%, 40%);
 }
-button:active{
-    background-color: hsl(0, 0%, 50%);
+button:active {
+    transform: scale(0.95);  /* Shrink effect when pressed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2d2d2d 0%, #252525 100%);
+}
+
+.operator-btn:active {
+    background: linear-gradient(135deg, #ff9333 0%, #e66b00 100%);
+    transform: scale(0.95);
 }
 
 .operator-btn{
